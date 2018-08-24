@@ -1,3 +1,42 @@
 <resources>
     <string name="app_name">Inventory App</string>
+    <string name="add_product">Add Product</string>
+    <!-- Dialog message when user is leaving editor but hasn't saved changes [CHAR LIMIT=NONE] -->
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+    <!-- Dialog button text for the option to discard a user's changes [CHAR LIMIT=20] -->
+    <string name="discard">Discard</string>
+
+    <!-- Dialog button text for the option to keep editing the current pet [CHAR LIMIT=20] -->
+    <string name="keep_editing">Keep Editing</string>
+    
+    <string name="error_saving_product">Error with saving product</string>
+    <string name="product_saved">Product saved</string>
+
+    <string name="error_update_product">Error with update product</string>
+    <string name="update_product">Product updated</string>
+
+    <string name="delete_dialog_msg">Delete this product?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="editor_delete_product_successful">Product Deleted</string>
+    <string name="editor_delete_product_error">Error with deleting product</string>
+    <string name="dont_have_product">You don\'t have this product</string>
+    <string name="positive_quantity">Quantity have to be 0 or more</string>
+    <string name="overview">Overview</string>
+    <string name="quanity">Quanity</string>
+    <string name="supplier">Supplier</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_price">Product Price</string>
+    <string name="order">ORDER</string>
+    <string name="start_quantity">0</string>
+    <string name="supplier_name">Supplier Name</string>
+    <string name="supplier_phone_number">Supplier Phone Number</string>
+    <string name="there_is_no_product">There is no product</string>
+
+    <string name="sale_product">Product sold</string>
+    <string name="currency">$</string>
+    <string name="pcs">pcs</string>
+
+
 </resources>
