@@ -37,6 +37,10 @@
     <string name="sale_product">Product sold</string>
     <string name="currency">$</string>
     <string name="pcs">pcs</string>
+    <string name="warn_product">Product name can\'t be empty</string>
+    <string name="warn_price">The product must have a price</string>
+    <string name="warn_supplier">Supplier name can\'t be empty</string>
+    <string name="warn_supplier_phone">Supplier Phone Number can\'t be empty</string>
 
 
 </resources>

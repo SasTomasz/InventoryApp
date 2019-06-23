@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductActivity">
+
+    <TextView
+        android:id="@+id/category_overview"
+        style="@style/StandardTextView"
+        android:text="@string/overview"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edit_product_name"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/category_quantity"
+        style="@style/StandardTextView"
+        android:text="@string/quanity"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edit_quantity"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/category_supplier"
+        style="@style/StandardTextView"
+        android:text="@string/supplier"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edit_supplier_name"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_product_name"
+        style="@style/StandardEditText"
+        android:hint="@string/product_name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_product_price"
+        style="@style/StandardEditText"
+        android:hint="@string/product_price"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_product_name" />
+
+    <Button
+        android:id="@+id/button_order"
+        style="@style/ButtonStyle"
+        android:text="@string/order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/b_quantity_increase"
+        style="@style/StandardImageButton"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_quantity"
+        app:layout_constraintStart_toEndOf="@+id/edit_quantity"
+        app:layout_constraintTop_toTopOf="@+id/edit_quantity"
+        app:srcCompat="@drawable/ic_add" />
+
+    <ImageButton
+        android:id="@+id/b_quantity_decrease"
+        style="@style/StandardImageButton"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_quantity"
+        app:layout_constraintStart_toStartOf="@+id/edit_product_price"
+        app:layout_constraintTop_toTopOf="@+id/edit_quantity"
+        app:srcCompat="@drawable/ic_remove" />
+
+    <EditText
+        android:id="@+id/edit_quantity"
+        style="@style/StandardEditText"
+        android:ems="5"
+        android:inputType="number"
+        android:hint="@string/quanity"
+        android:text="@string/start_quantity"
+        app:layout_constraintStart_toEndOf="@+id/b_quantity_decrease"
+        app:layout_constraintTop_toBottomOf="@+id/edit_product_price" />
+
+    <EditText
+        android:id="@+id/edit_supplier_name"
+        style="@style/StandardEditText"
+        android:hint="@string/supplier_name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_quantity" />
+
+    <EditText
+        android:id="@+id/edit_supplier_phone_number"
+        style="@style/StandardEditText"
+        android:hint="@string/supplier_phone_number"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_supplier_name" />
+</android.support.constraint.ConstraintLayout>
